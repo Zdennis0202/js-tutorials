@@ -2,130 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>School Educational Bootstrap Template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="author" content="http://webthemez.com" />
-
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
-    <link href="css/jcarousel.css" rel="stylesheet" />
-    <link href="css/flexslider.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
+   <meta charset="utf-8">
+   <title>JavaScript Tutorials</title>
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link href="css/bootstrap.min.css" rel="stylesheet" />
+   <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+   <link href="css/flexslider.css" rel="stylesheet" />
+   <link href="css/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="wrapper">
+   <div id="wrapper">
 
-        <!-- start header -->
-        <header>
-            <div class="navbar navbar-default navbar-static-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a>
-                    </div>
-                    <div class="navbar-collapse collapse ">
-                        <ul class="nav navbar-nav">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li class="active"><a href="tutorials.html">Tutorials</a></li>
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <!-- NAVIGATION START ==================================================== -->
+      <header>
+         <div id="nav-placeholder"></div>
+         <script>
+            $(document).ready(function () {
+               var url = 'navbar.html';
+               $('#nav-placeholder').load(url);
+            });
+         </script>
+      </header>
+      <!-- NAVIGATION END =======================================================-->
+
+      <section id="inner-headline">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <h2 class="pageTitle">My Tutorials</h2>
+               </div>
             </div>
-        </header><!-- end header -->
-        <section id="inner-headline">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="pageTitle">My Tutorials</h2>
-                    </div>
-                </div>
+         </div>
+      </section>
+
+      <!-- CONTENT START ========================================================================= -->
+      <section id="content">
+         <div class="container content">
+            <div class="row service-v1 margin-bottom-40">
+               <div class="col-md-4 md-margin-bottom-40">
+                  <img class="img-responsive" src="img/service1.jpg" alt="">
+                  <!-- https://javascript.info -->
+                  <h3>111 JavaScript.info</h3>
+                  <p>
+                     <li><a href="lessons/111/1.1.html">1.1 An Introduction to
+                           JavaScript</a></li>
+                     <li><a href="lessons/111/1.2.html">1.2 lesson </a></li>
+                     <li><a href="lessons/111/1.3.html">1.3 lesson</a></li>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
+                     aliquam, incidunt eius
+                  </p>
+               </div>
+               <div class="col-md-4">
+                  <img class="img-responsive" src="img/service2.jpg" alt="">
+                  <!-- https://www.w3schools.com/js/default.asp -->
+                  <h3>222 W3schools.com (Basic to Advanced)</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
+                     aliquam, incidunt eius magni provident,</p>
+               </div>
+               <div class="col-md-4 md-margin-bottom-40">
+                  <img class="img-responsive" src="img/service3.jpg" alt="">
+                  <!-- https://www.learn-js.org -->
+                  <h3>333 Learn-js.orgt - Interactive JavaScript Tutorial</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+               </div>
             </div>
-        </section>
-        <section id="content">
-            <div class="container content">
 
-                <!-- Service Block 1 -->
-                <div class="row service-v1 margin-bottom-40">
-                    <div class="col-md-4 md-margin-bottom-40">
-                        <img class="img-responsive" src="img/service1.jpg" alt="">
-                        <!-- https://javascript.info -->
-                        <h3>111 JavaScript.info</h3>
-                        <p>
-                            <li><a href="../js-tutorials/tutorials/javascript-info/1.1.html">1.1 An Introduction to
-                                    JavaScript</a></li>
-                            <li><a href="../js-tutorials/tutorials/javascript-info/1.2.html">1.2 lesson </a></li>
-                            <li><a href="../js-tutorials/tutorials/javascript-info/1.3.html">1.3 lesson</a></li>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt eius
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/service2.jpg" alt="">
-                        <!-- https://www.w3schools.com/js/default.asp -->
-                        <h3>222 W3schools.com (Basic to Advanced)</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt eius magni provident,</p>
-                    </div>
-                    <div class="col-md-4 md-margin-bottom-40">
-                        <img class="img-responsive" src="img/service3.jpg" alt="">
-                        <!-- https://www.learn-js.org -->
-                        <h3>333 Learn-js.orgt - Interactive JavaScript Tutorial</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+            <!-- Service Block 2 -->
+            <div class="row service-v1 margin-bottom-40">
+               <div class="col-md-4 md-margin-bottom-40">
+                  <img class="img-responsive" src="img/service1.jpg" alt="">
+                  <!-- https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php -->
+                  <h3>444 W3resource.com (javascript exercises)</h3>
+                  <p>
+                     <li><a href="lessons/444/1.2.html">1.2 lesson </a></li>
+                     <li><a href="lessons/444/1.3.html">1.3 lesson</a></li>
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
+                     aliquam, incidunt eius magni provident,
+                  </p>
+               </div>
+               <div class="col-md-4">
+                  <img class="img-responsive" src="img/service2.jpg" alt="">
+                  <!-- https://www.jschallenger.com -->
+                  <h3>555 JSchallenger.com (javascript-fundamentals exercises)</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+               </div>
+               <div class="col-md-4 md-margin-bottom-40">
+                  <img class="img-responsive" src="img/service3.jpg" alt="">
+                  <!-- https://codeguppy.com/index.html?list=coding -->
+                  <h3>666 Codeguppy.com - Coding lessons (built-in editor) </h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
+                     aliquam, incidunt eius magni provident, doloribus</p>
+               </div>
+            </div>
+            <!-- CONTENT END -->
 
-                <!-- Service Block 2 -->
-                <div class="row service-v1 margin-bottom-40">
-                    <div class="col-md-4 md-margin-bottom-40">
-                        <img class="img-responsive" src="img/service1.jpg" alt="">
-                        <!-- https://www.w3resource.com/javascript-exercises/javascript-basic-exercises.php -->
-                        <h3>444 W3resource.com (javascript exercises)</h3>
-                        <p>
-                            <li><a href="../js-tutorials/tutorials/javascript-info/1.2.html">1.2 lesson </a></li>
-                            <li><a href="../js-tutorials/tutorials/javascript-info/1.3.html">1.3 lesson</a></li>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt eius magni provident,
-                        </p>
-                    </div>
-                    <div class="col-md-4">
-                        <img class="img-responsive" src="img/service2.jpg" alt="">
-                        <!-- https://www.jschallenger.com -->
-                        <h3>555 JSchallenger.com (javascript-fundamentals exercises)</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="col-md-4 md-margin-bottom-40">
-                        <img class="img-responsive" src="img/service3.jpg" alt="">
-                        <!-- https://codeguppy.com/index.html?list=coding -->
-                        <h3>666 Codeguppy.com - Coding lessons (built-in editor) </h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                            aliquam, incidunt eius magni provident, doloribus</p>
-                    </div>
-                </div>
+            <hr class="margin-bottom-50">
 
-                <!-- End Service Blcoks -->
-
-                <hr class="margin-bottom-50">
-
-                <!-- Info Blcoks -->
-                <!-- <div class="row">
+            <!-- INFO BLOCKS START ============================================================================= -->
+            <!-- <div class="row">
                     <div class="col-sm-4 info-blocks">
                         <i class="icon-info-blocks fa fa-bell-o"></i>
                         <div class="info-blocks-in">
@@ -151,45 +127,16 @@
                         </div>
                     </div>
                 </div> -->
-                <!-- End Info Blcoks -->
+            <!-- INFO BLOCKS END -->
 
+         </div>
+      </section>
 
-                <!-- Info Blcoks -->
-                <!-- <div class="row">
-                    <div class="col-sm-4 info-blocks">
-                        <i class="icon-info-blocks fa fa-code"></i>
-                        <div class="info-blocks-in">
-                            <h3>SEO Ready</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                                aliquam, incidunt</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 info-blocks">
-                        <i class="icon-info-blocks fa fa-compress"></i>
-                        <div class="info-blocks-in">
-                            <h3>Fully Responsive</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                                aliquam, incidunt</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 info-blocks">
-                        <i class="icon-info-blocks fa fa-html5"></i>
-                        <div class="info-blocks-in">
-                            <h3>CSS3 + HTML5</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur
-                                aliquam, incidunt</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Info Blcoks -->
-
-
-            </div> -->
-        </section>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <!-- <div class="col-lg-3">
+      <!-- FOOTER START ==============================================================================-->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <!-- <div class="col-lg-3">
                         <div class="widget">
                             <h5 class="widgetheading">Our Contact</h5>
                             <address>
@@ -235,52 +182,54 @@
                             </ul>
                         </div>
                     </div> -->
-                </div>
             </div>
-            <div id="sub-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="copyright">
-                                <p>
-                                    <span>&copy; School Educational 2015 All right reserved. By </span><a
-                                        href="http://webthemez.com" target="_blank">WebThemez</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="social-network">
-                                <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-                                </li>
-                                <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                </li>
-                                <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-                                </li>
-                                <li><a href="#" data-placement="top" title="Pinterest"><i
-                                            class="fa fa-pinterest"></i></a></li>
-                                <li><a href="#" data-placement="top" title="Google plus"><i
-                                            class="fa fa-google-plus"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+         </div>
+         <div id="sub-footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6">
+                     <div class="copyright">
+                        <p>
+                           <span>&copy; School Educational 2015 All right reserved. By </span><a
+                              href="http://webthemez.com" target="_blank">WebThemez</a>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <ul class="social-network">
+                        <li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                        <li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
             </div>
-        </footer>
-    </div>
-    <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
-    <!-- javascript
+         </div>
+      </footer>
+      <!-- FOOTER END -->
+
+
+   </div>
+   <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+   <!-- javascript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.fancybox-media.js"></script>
-    <script src="js/portfolio/jquery.quicksand.js"></script>
-    <script src="js/portfolio/setting.js"></script>
-    <script src="js/jquery.flexslider.js"></script>
-    <script src="js/animate.js"></script>
-    <script src="js/custom.js"></script>
+   <!-- Placed at the end of the document so the pages load faster -->
+   <script src="js/jquery.js"></script>
+   <script src="js/jquery.easing.1.3.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/jquery.fancybox.pack.js"></script>
+   <script src="js/jquery.fancybox-media.js"></script>
+   <script src="js/portfolio/jquery.quicksand.js"></script>
+   <script src="js/portfolio/setting.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/animate.js"></script>
+   <script src="js/custom.js"></script>
 </body>
 
 </html>
